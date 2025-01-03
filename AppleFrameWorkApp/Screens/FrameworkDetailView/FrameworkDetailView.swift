@@ -36,7 +36,7 @@ struct FrameworkDetailView: View {
             .padding(.bottom, 20)
         }
         .fullScreenCover(isPresented: $isShowingSafariView) {
-            SafariView(url: URL(string: framework.urlString) ?? URL(string: "www.apple.com")!)
+            SafariView(url: URL(string: framework.urlString) ?? URL(string: "https://developer.apple.com/")!)
         }
     }
 }

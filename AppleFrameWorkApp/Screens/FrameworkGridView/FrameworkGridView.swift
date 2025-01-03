@@ -20,7 +20,7 @@ struct FrameworkGridView: View {
                                 viewModel.selectedFramework = framework
                             }
                     }
-                }
+                }.padding()
             }
             .navigationTitle("🍎 Frameworks")
             .sheet(isPresented: $viewModel.isShowingDetailView) {
